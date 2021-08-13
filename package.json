@@ -1,13 +1,21 @@
 {
-  "name": "typescript-boilerplate",
+  "name": "node-typescript-boilerplate",
   "version": "1.0.0",
-  "description": "A boilerplate for creating node/typescript projects",
+  "description": "A boilerplate for authoring node/typescript libraries",
   "main": "main.js",
   "files": [
     "dist"
   ],
+  "keywords": [
+    "node",
+    "typescript",
+    "esbuild"
+  ],
+  "repository": {
+    "url": "https://github.com/carlosnakane/node-typescript-boilerplate.git" 
+  },
   "scripts": {
-    "start": "ts-node",
+    "start": "ts-node src/main.ts",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "lint": "eslint",
