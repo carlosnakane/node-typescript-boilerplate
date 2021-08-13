@@ -1,0 +1,42 @@
+{
+  "name": "typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate for creating node/typescript projects",
+  "main": "main.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "ts-node",
+    "test": "jest",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "build:debug": "esbuild src/main.ts --bundle --sourcemap --outfile=dist/main.js",
+    "build:watch": "esbuild src/main.ts --bundle --watch --sourcemap=external --outfile=dist/main.js",
+    "prepare": "husky install"
+  },
+  "author": "Carlos Nakane",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/node12": "~1.0.9",
+    "@types/jest": "~27.0.1",
+    "@typescript-eslint/eslint-plugin": "~4.29.1",
+    "@typescript-eslint/parser": "~4.29.1",
+    "esbuild": "^0.12.20",
+    "eslint": "~7.32.0",
+    "eslint-config-google": "~0.14.0",
+    "eslint-config-prettier": "~8.3.0",
+    "eslint-plugin-import": "~2.24.0",
+    "eslint-plugin-jest": "~24.4.0",
+    "eslint-plugin-prettier": "~3.4.0",
+    "husky": "^7.0.1",
+    "jest": "~27.0.6",
+    "lint-staged": "^11.1.2",
+    "prettier": "~2.3.2",
+    "rimraf": "~3.0.2",
+    "ts-node": "~10.2.0",
+    "typescript": "~4.3.5"
+  }
+}
