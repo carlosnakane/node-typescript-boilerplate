@@ -6,9 +6,13 @@
     "sourceMap": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "declaration": true,
   },
-  "exclude": ["node_modules"],
+  "exclude": [
+    "node_modules",
+    "./src/**/__tests__/**/*.ts"
+  ],
   "include": [
     "./src/**/*.ts"
   ]
